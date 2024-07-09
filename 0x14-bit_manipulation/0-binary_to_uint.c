@@ -2,9 +2,9 @@
 #include<string.h>
 
 /**
- * binary_to_uint - Function that converts binary to unsigned int
- * Return 'sum' if successful
- * Return 0 if not successful
+ * binary_to_unit - Function that converts binary to unsigned int
+ * @sum - Return value
+ * @b - String of 0s amd 1s to be converted
  *
  */
 unsigned int binary_to_unit(const char *b)
