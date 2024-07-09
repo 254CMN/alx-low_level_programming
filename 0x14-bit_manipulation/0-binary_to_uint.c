@@ -23,7 +23,7 @@ unsigned int binary_to_unit(const char *b)
 			for (j = 0; j < strlen(b) ; j++)
 			{
 				n = 1;
-				sum = sum + (b[i] * n;
+				sum = sum + (b[i] * n);
 			}
 			n = n * 2;
 		}
