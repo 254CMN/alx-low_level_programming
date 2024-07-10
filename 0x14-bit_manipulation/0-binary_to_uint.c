@@ -2,12 +2,12 @@
 #include<string.h>
 
 /**
- * binary_to_unit - Function that converts binary to unsigned int
+ * binary_to_uint - Function that converts binary to unsigned int
  * @sum - Return value of function
  * @b - String of 0s amd 1s to be converted
  *
  */
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	int sum = 0;
 	int i;
