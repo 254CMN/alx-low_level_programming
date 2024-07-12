@@ -1,6 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+int add(int, int);
+float div(float, float);
+int mod(int, int);
+int mul(int, int);
+int sub(int, int);
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
