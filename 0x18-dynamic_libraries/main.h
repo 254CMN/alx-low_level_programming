@@ -2,7 +2,7 @@
 #define MAIN_H
 
 int add(int, int);
-float div(float, float);
+int div(int, int);
 int mod(int, int);
 int mul(int, int);
 int sub(int, int);
