@@ -1,4 +1,5 @@
 0x18. C - Dynamic libraries
+Dynamic library or Shared library is a collection of precompiled, reuseable code modules that can be loaded and linked with a program at runtime.
 0. A library is not a luxury but one of the necessities of life
 Create the dynamic library libdynamic.so containing all the functions listed for this project.
 To compile object files(.o) from respective .c files  using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu8:
