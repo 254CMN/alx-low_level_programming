@@ -6,5 +6,5 @@
 
 char * _memset(char *s, char b, unsigned int n)
 {
-	return (s, b, n);
+	return (s);
 }
