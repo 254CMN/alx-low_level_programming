@@ -1,5 +1,3 @@
-all : school
-
-school: school.c
+all:
 	@echo "Creates an executable"
 	gcc school.c -o school
