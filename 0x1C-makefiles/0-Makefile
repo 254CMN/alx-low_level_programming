@@ -1,4 +1,7 @@
-all : school
+all : school school.c
 
 school : school.c
 	gcc school.c -o school
+
+school.c :
+	vi school.c
