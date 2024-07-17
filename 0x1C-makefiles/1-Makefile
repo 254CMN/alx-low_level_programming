@@ -1,8 +1,20 @@
-#gcc and some variables with make file
-#To compile all .c files, assign '$(wildcard .c)' to the variable SRC
-#If there might be other .c files that don't need to be compiled, we assign only the files that need to be compiled in variable SRC
-#'all' will build 
+# gcc and some variables with make file
+# To compile all .c files, assign '$(wildcard .c)' to the variable SRC
+# If there might be other .c files that don't need to be compiled, we assign only the files that need to be compiled in variable SRC
+# 'all' will build 
 CC = gcc
 SRC = main.c school.c
 
-all: ${SRC}
+all: school
+
+school : main.o school.o
+	$(CC) main.o school.o -o school
+
+main.o : $(SRC)
+	$(CC) -c $(SRC)
+
+school.o : $(SRC)
+	$(CC) -c $(SRC)
+
+clean :
+	rm *.o
