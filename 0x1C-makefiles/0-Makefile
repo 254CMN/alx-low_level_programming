@@ -1,7 +1,3 @@
-all : school school.c
-
-school : school.c
-	gcc school.c -o school
-
-school.c :
-	vi school.c
+#Create my first makefile with all as the main rule
+all : main.c school.c
+	gcc main.c school.c -o school
