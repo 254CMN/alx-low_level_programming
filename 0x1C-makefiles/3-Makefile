@@ -8,19 +8,19 @@
 # Temporary Vim and Emacs files have the extension 
 CC = gcc
 SRC = main.c school.c
-OBJ = $(SRC %.c=%.o)
+OBJ = ${SRC %.c=%.o}
 NAME = school
 RM = rm -f # RM : the program to delete files
 
-all : $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
 
-clean :
-	$(RM) *~ $(NAME)
+clean:
+	${RM} *~ ${NAME}
 
-oclean :
-	$(RM) $(OBJ)
+oclean:
+	${RM} ${OBJ}
 
-fclean : clean oclean
+fclean: clean oclean
 
-re : fclean all
+re: fclean all
