@@ -1,12 +1,10 @@
+# First useful makefile
+# You are not allowed to have a list of .o files i.e 'OBJ = main.o school.o
+# Hence, in variable OBJ, assign : OBJ = $(SRC:%.c=%.o)
 CC = gcc
-SRC = main.c school.c #$(wildcard .c)
-OBJ = main.o school.o #$(wildcard .o)
+SRC = main.c school.c 
+OBJ = $(SRC:%.c=%.o) # This is to say that variable SRC containing files , all .c files will be replaced with .o files 
 NAME = school
 
-all : $(SRC) $(NAME)
-
-$(SRC) : $(OBJ)
-	$(CC) -c -o  $(OBJ) $(SRC)
-
-$(NAME) : $(OBJ)
-	$(CC) $(OBJ) -o $(NAME) 
+all : $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
